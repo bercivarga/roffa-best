@@ -1,1 +1,80 @@
+.app-container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+}
 
+.description-container {
+	width: 500px;
+	padding: 20px 20px 20px 20px;
+	color: white;
+	background: linear-gradient(145deg, #353738, #3f4142);
+	box-shadow: 20px 20px 60px #323435, -20px -20px 60px #444647;
+	line-height: 150%;
+	position: relative;
+}
+
+.close-btn {
+	width: 60px;
+	height: 60px;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: -60px;
+	z-index: 1001;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.divider {
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+
+.tags-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.place-tag {
+	border-radius: 4px;
+	background-color: greenyellow;
+	color: black;
+	font-weight: 700;
+	padding: 4px 10px 4px 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.leaflet-container {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.leaflet-tooltip-pane div {
+	cursor: pointer;
+	text-align: center;
+	font-size: 18px;
+	color: black;
+	background: greenyellow;
+	border: none;
+	padding: 12px;
+}
+
+.leaflet-tooltip-pane div::before {
+	display: none;
+}
+
+.my-div-icon {
+	width: 128px;
+	height: 128px;
+	background-color: greenyellow;
+	border-radius: 50%;
+	cursor: pointer;
+}

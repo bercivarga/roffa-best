@@ -1,0 +1,35 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "'t Centrum"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.91869277485385, 4.472958014020078 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "De Stichting"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.929697, 4.4612807 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "The Reef"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.92345699371811, 4.4827427123303 ]
+			}
+		}
+	]
+}
