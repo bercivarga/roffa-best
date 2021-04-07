@@ -4,6 +4,7 @@ import { TileLayer, MapContainer, Marker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { divIcon } from 'leaflet';
 import locations from './locations.json';
+import { BiBeer, BiMovie, BiCool, BiCycling, BiWalk, BiFoodMenu, BiHappyBeaming } from 'react-icons/bi';
 
 const MAPBOX_API_KEY = process.env.REACT_APP_MAPBOX_API_KEY;
 const MAPBOX_USERID = process.env.REACT_APP_MAPBOX_USERID;
@@ -11,12 +12,61 @@ const MAPBOX_STYLEID = process.env.REACT_APP_MAPBOX_STYLEID;
 
 const icon = divIcon({ className: 'my-div-icon' });
 
+const initialData = {
+	properties: {
+		name: '',
+		description: '',
+		tags: [],
+		type: ''
+	}
+};
+
+const Popup = ({ detailShowing, handleClose, loc }) => {
+	let icon;
+
+	if (loc.properties.type === 'cinema') {
+		icon = <BiMovie className="place-icon" />;
+	} else if (loc.properties.type === 'bar') {
+		icon = <BiBeer className="place-icon" />;
+	} else if (loc.properties.type === 'outdoors') {
+		icon = <BiWalk className="place-icon" />;
+	} else if (loc.properties.type === 'party') {
+		icon = <BiCool className="place-icon" />;
+	} else if (loc.properties.type === 'bikeroute') {
+		icon = <BiCycling className="place-icon" />;
+	} else if (loc.properties.type === 'restaurant') {
+		icon = <BiFoodMenu className="place-icon" />;
+	} else if (loc.properties.type === 'experience') {
+		icon = <BiHappyBeaming className="place-icon" />;
+	}
+
+	return (
+		<div className="description-container" style={{ display: `${detailShowing ? 'block' : 'none'}` }}>
+			<div className="close-btn" onClick={handleClose}>
+				X
+			</div>
+			<div className="title-container">
+				<h1>{loc.properties.name}</h1>
+				{icon}
+			</div>
+			<div className="divider" />
+			<p>{loc.properties.description}</p>
+			<div className="tags-container">
+				{loc.properties.tags.map((t) => {
+					return (
+						<div key={t} className="place-tag">
+							{t}
+						</div>
+					);
+				})}
+			</div>
+		</div>
+	);
+};
+
 function App() {
 	const [ detailShowing, setDetailShowing ] = useState(false);
-
-	function handleClick() {
-		setDetailShowing(true);
-	}
+	const [ loc, setLoc ] = useState(initialData);
 
 	function handleClose() {
 		setDetailShowing(false);
@@ -35,35 +85,21 @@ function App() {
 							key={location.properties.name}
 							position={location.geometry.coordinates}
 							icon={icon}
-							eventHandlers={{ click: handleClick }}
+							eventHandlers={{
+								click: () => {
+									setLoc(location);
+									setDetailShowing(true);
+								}
+							}}
 						>
 							<Tooltip className="popup_wrapper" sticky>
 								<strong>{location.properties.name}</strong>
 							</Tooltip>
+							<Popup handleClose={handleClose} detailShowing={detailShowing} loc={loc} />
 						</Marker>
 					);
 				})}
 			</MapContainer>
-			<div className="description-container" style={{ display: `${detailShowing ? 'block' : 'none'}` }}>
-				<div className="close-btn" onClick={handleClose}>
-					X
-				</div>
-				<h1>Here comes the title</h1>
-				<div className="divider" />
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum.
-				</p>
-				<div className="tags-container">
-					<div className="place-tag">Good beer</div>
-					<div className="place-tag">Chill people</div>
-					<div className="place-tag">Lekker eten</div>
-					<div className="place-tag">Nice routes</div>
-				</div>
-			</div>
 		</div>
 	);
 }
