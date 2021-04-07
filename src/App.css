@@ -9,14 +9,14 @@
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
 		'Helvetica Neue', sans-serif;
 	font-size: 16px;
-	width: 60%;
-	padding: 20px 20px 20px 20px;
+	width: 50%;
+	padding: 0px 20px 20px 20px;
 	color: white;
 	background: linear-gradient(145deg, #353738, #3f4142);
 	line-height: 150%;
 	position: absolute;
 	bottom: 10px;
-	left: 20%;
+	left: 25%;
 	z-index: 1000;
 }
 
@@ -50,6 +50,7 @@
 .place-icon {
 	width: 32px;
 	height: 32px;
+	color: greenyellow;
 }
 
 .divider {
@@ -104,8 +105,8 @@
 
 @media (min-width: 1500px) {
 	.description-container {
-		width: 800px;
-		left: 28%;
+		width: 600px;
+		left: 33%;
 	}
 }
 
@@ -120,7 +121,10 @@
 
 	.close-btn {
 		position: relative;
+		width: 100%;
 		left: 0;
+		margin-top: 20px;
+		border: 2px solid greenyellow;
 	}
 
 	.place-icon {

@@ -5,39 +5,182 @@
 			"type": "Feature",
 			"properties": {
 				"name": "Paddy Murphy's Irish Pub",
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				"description": "Paddy Murphy's is simply the best pub to go to in Rotterdam. You'll definitely come out Irish after visiting this pub for the first time.",
 				"tags": [ "Cool people", "Live music", "Always reliable" ],
 				"type": "bar"
 			},
 			"geometry": {
 				"type": "Point",
-				"coordinates": [ 51.91869277485385, 4.472958014020078 ]
+				"coordinates": [ 51.92136700150785, 4.481375984902015 ]
 			}
 		},
 		{
 			"type": "Feature",
 			"properties": {
 				"name": "Kralingse Plas",
-				"description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
+				"description": "A massive lake located in the northern part of the Kralingen district. Great for walks, cycling, and some beers on the shore.",
 				"tags": [ "Relaxing", "Scenic" ],
 				"type": "outdoors"
 			},
 			"geometry": {
 				"type": "Point",
-				"coordinates": [ 51.929697, 4.4612807 ]
+				"coordinates": [ 51.93704319034451, 4.514448811687119 ]
 			}
 		},
 		{
 			"type": "Feature",
 			"properties": {
 				"name": "Cinerama",
-				"description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+				"description": "An old-school style cinema usually screening blockbuster titles. If you're bored of the usual cinema look and want to treat yourself to something more elegant, make sure to give this place a chance.",
 				"tags": [ "Old school", "Classy" ],
 				"type": "cinema"
 			},
 			"geometry": {
 				"type": "Point",
-				"coordinates": [ 51.92345699371811, 4.4827427123303 ]
+				"coordinates": [ 51.91724763594051, 4.47886755606639 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "LantarenVenster",
+				"description": "LantarenVenster is the cinema to go to for independent and international titles in Rotterdam. The place itself is very athmospheric and elegant, also on a superb location.",
+				"tags": [ "Alternative", "International" ],
+				"type": "cinema"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.904977405489745, 4.487003927230498 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Bolder Neoliet",
+				"description": "My local bouldering gym I frequent on almost a daily basis. Great atmosphere, superb routes, and good coffee. The place itself is not huge, but the people and the vibe make up for it.",
+				"tags": [ "Bouldering", "Local", "Community" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.908478156445014, 4.43374735421745 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Dakpark",
+				"description": "While this park is nothing fancy, it has one thing that you need to check out: bunnies! Plenty of them, actually. I've never seen so many rabbits in a city, but whenever I come here I'm always delighted to see them run around.",
+				"tags": [ "Rabbits" ],
+				"type": "outdoors"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.90807644171394, 4.439338147672237 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Yokohama Ramen Saito",
+				"description": "The best ramen you'll ever have (at least in the Netherlands). Toshimi, the owner and head chef I happen to know personally, is a great guy with a huge heart. His passion towards Japanese cuisine shows in the wonderful taste of his ramen as well. Fun fact: all noodles are made from flour from the windmill next to the restaurant.",
+				"tags": [ "Japanese", "Ramen", "Cosy" ],
+				"type": "restaurant"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.92075683729055, 4.395762127230952 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Vroesenpark",
+				"description": "Massive park to have your barbeques in and hang out with your friends. You'll find plenty of people here when the sun comes out, so make sure you're there quickly otherwise all the best spots will be taken.",
+				"tags": [ "Outdoors", "Park", "Spacious" ],
+				"type": "outdoors"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.93084503660486, 4.453015323002587 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Eetcafe Concordia",
+				"description": "Great place with wonderful people. There's always a good mix of Dutchies and Internationals here. I've had many happy memories here during my bachelor study, considering that it's close to my university.",
+				"tags": [ "Happy hour", "International" ],
+				"type": "bar"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.92021321414713, 4.511764589948136 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Monk Bouldergym",
+				"description": "Great place to go to with friends. The boulders are very nicely set, and the place is quite huge. Thier tournaments and events are definitely worth to check out!",
+				"tags": [ "Bouldering", "Spacious" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.94181378360761, 4.473260540724955 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Kunsthal Rotterdam",
+				"description": "Your dose of contemporary art can be found here. Kunsthal is a fantastic place to go to every once in a while, with reasonable pricing and a cool little gift section.",
+				"tags": [ "Art", "Contemporary" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.911080931791936, 4.473615827035153 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Rotown",
+				"description": "One of the best places in town, period. Good music, nice drinks, the location is perfect, and the people are awesome.",
+				"tags": [ "Rock", "Indie", "Events" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.91693973257099, 4.471722034882941 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "De Slegte",
+				"description": "Second hand book store for those who want to explore uncommon titles. The place has an authentic vibe and it is generally a calm place to hand out and discover books. They have an international section as well.",
+				"tags": [ "Books", "Second hand" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.92113736809164, 4.486405649896871 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Cheap Fashion",
+				"description": "Second hand clothing store for people on a budget. I've gotten so many neat garments from here. One time I even found an old Hungarian army uniform from the early 90's.",
+				"tags": [ "Second hand", "Clothing" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.92379979503087, 4.485429170452537 ]
 			}
 		}
 	]

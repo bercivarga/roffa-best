@@ -42,9 +42,6 @@ const Popup = ({ detailShowing, handleClose, loc }) => {
 
 	return (
 		<div className="description-container" style={{ display: `${detailShowing ? 'block' : 'none'}` }}>
-			<div className="close-btn" onClick={handleClose}>
-				X
-			</div>
 			<div className="title-container">
 				<h1>{loc.properties.name}</h1>
 				{icon}
@@ -59,6 +56,9 @@ const Popup = ({ detailShowing, handleClose, loc }) => {
 						</div>
 					);
 				})}
+			</div>
+			<div className="close-btn" onClick={handleClose}>
+				{window.innerWidth < 500 ? 'Close' : 'X'}
 			</div>
 		</div>
 	);
