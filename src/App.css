@@ -9,14 +9,14 @@
 	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
 		'Helvetica Neue', sans-serif;
 	font-size: 16px;
-	width: 800px;
+	width: 60%;
 	padding: 20px 20px 20px 20px;
 	color: white;
 	background: linear-gradient(145deg, #353738, #3f4142);
 	line-height: 150%;
 	position: absolute;
 	bottom: 10px;
-	left: 30%;
+	left: 20%;
 	z-index: 1000;
 }
 
@@ -40,6 +40,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.title-container h1 {
+	line-height: 120%;
+	padding-right: 20px;
 }
 
 .place-icon {
@@ -95,4 +100,31 @@
 	background-color: greenyellow;
 	border-radius: 50%;
 	cursor: pointer;
+}
+
+@media (min-width: 1500px) {
+	.description-container {
+		width: 800px;
+		left: 28%;
+	}
+}
+
+@media (max-width: 500px) {
+	.description-container {
+		width: 90%;
+		height: 100vh;
+		left: 0;
+		top: 0;
+		overflow-y: scroll;
+	}
+
+	.close-btn {
+		position: relative;
+		left: 0;
+	}
+
+	.place-icon {
+		width: 48px;
+		height: 48px;
+	}
 }
