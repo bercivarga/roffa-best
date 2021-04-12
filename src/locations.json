@@ -182,6 +182,84 @@
 				"type": "Point",
 				"coordinates": [ 51.92379979503087, 4.485429170452537 ]
 			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Cube Houses",
+				"description": "Neat little spot to bring your relatives to. It is kind of a signature place in Rotterdam, so make sure you won't miss it when you visit.",
+				"tags": [ "Architecture", "Museum" ],
+				"type": "culture"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.9203117017564, 4.490625669214847 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Boekhandel Donner",
+				"description": "No, you can't buy döner here. Instead, this massive bookstore offers you a fascinating experience while exploring titles from all around the globe.",
+				"tags": [ "Books", "Store" ],
+				"type": "culture"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.91886915444981, 4.479446222287294 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Erasmus University Rotterdam",
+				"description": "Just a shoutout to my university. Thanks for all the memories and sleepless nights, but after 5 years it's time to say bye bye.",
+				"tags": [ "Research", "University" ],
+				"type": "culture"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.91650671768853, 4.52596645509403 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Euromast",
+				"description": "Rotterdam's high rise TV tower with a restaurant and beautiful view of the city.",
+				"tags": [ "Panorama", "Dining" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.90546373752135, 4.466648127471936 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Spido",
+				"description": "Check out Europe's biggest harbor in person with Spido's tours. Bit pricey but definitely a cool experience.",
+				"tags": [ "Harbor", "Experience" ],
+				"type": "experience"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.91057352440953, 4.482542897077871 ]
+			}
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"name": "Keilecafe",
+				"description": "Super hippy place for hanging out and having a beer. Cool people, sweet music, cheap beer. Next to my gym as well so it gets an extra point for that.",
+				"tags": [ "Bar", "Restaurant" ],
+				"type": "bar"
+			},
+			"geometry": {
+				"type": "Point",
+				"coordinates": [ 51.90867889250646, 4.435602956307516 ]
+			}
 		}
 	]
 }

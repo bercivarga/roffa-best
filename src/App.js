@@ -4,7 +4,7 @@ import { TileLayer, MapContainer, Marker, Tooltip } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import { divIcon } from 'leaflet';
 import locations from './locations.json';
-import { BiBeer, BiMovie, BiCool, BiWalk, BiFoodMenu, BiHappyBeaming } from 'react-icons/bi';
+import { BiBeer, BiMovie, BiCool, BiWalk, BiFoodMenu, BiHappyBeaming, BiBrain } from 'react-icons/bi';
 
 const MAPBOX_API_KEY = process.env.REACT_APP_MAPBOX_API_KEY;
 const MAPBOX_USERID = process.env.REACT_APP_MAPBOX_USERID;
@@ -36,6 +36,8 @@ const Popup = ({ detailShowing, handleClose, loc }) => {
 		icon = <BiFoodMenu className="place-icon" />;
 	} else if (loc.properties.type === 'experience') {
 		icon = <BiHappyBeaming className="place-icon" />;
+	} else if (loc.properties.type === 'culture') {
+		icon = <BiBrain className="place-icon" />;
 	}
 
 	return (
